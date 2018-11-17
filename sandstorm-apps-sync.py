@@ -69,10 +69,9 @@ def sync(public_path):
                  leave=False
         )
 
+    color_print('Done. The output directory can be connected to your local SandStorm AppStore.', txt_bg='green', bold=True, blink=True)
 
-    click.echo(apps_list[0])
-
-    pass
+    return
 
 def color_print(txt, txt_fg=None, txt_bg=None, dt_fg=None, dt_bg='cyan', blink=False, bold=False):
     click.echo('{} {}'.format(
